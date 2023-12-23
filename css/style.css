@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');/* style.css */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    max-width: 80ch;
+    margin: 0 auto;
+    font-family: 'Comic Sans MS', cursive; /* Funky font */
+    background-color: rgba(160, 210, 235, 0.2); /* Light gray background color */
+}
+
+
+a, button {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+a:hover, button:hover {
+    color: #333; /* Darken the text color on hover */
+}
+
+button {
+    background-color: #007bff; /* Set button background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button background color on hover */
+}
+
+
+header {
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    background-color:#a0d2eb; /* Choose a background color that complements your image */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* To position the logo and nav buttons at the ends */
+    align-items: center; /* To vertically center the content */
+    padding: 20px 0; /* Adjust the padding as needed */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: white;
+
+}
+
+.logo img {
+    width: 100px; /* Adjust the image size as needed */
+    height: 100px; /* Adjust the image size as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Add spacing between navigation buttons */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first button */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* Text color for navigation links */
+    font-weight: bold; /* Make the navigation links bold */
+    font-size: 18px; /* Adjust font size for navigation links */
+}
+
+#hero {
+    background-color:rgba(160, 210, 235, 0.2);
+    font-family: 'Montserrat', sans-serif;   
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+
+h2 {
+    /* Use Pacifico for the title */
+    font-size: 36px; /* Adjust the font size */
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row; /* Display text and image side by side */
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1; /* Allow the text to take up available space */
+    padding: 20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.5; 
+}
+
+.hero-image {
+    flex: 1; /* Allow the image to take up available space */
+    max-width: 200px; /* Adjust the maximum width of the image */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Set link color to black */
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-category {
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #455;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-display: 2px;
+    text-align: left;
+    font-size: 12px;
+    
+}
+
+footer p {
+    margin: 0; 
+    margin-right: 10px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    }
+
+    
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between icons */
+}
+
+
+.social-icons a img {
+    width: 15px; /* Set the exact width */
+    height: 15px; /* Set the exact height */
+}

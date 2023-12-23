@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive; /* Funky font */
+    background-color: rgba(160, 210, 235, 0.2); /* Light gray background color */
+}
+
+button:hover {
+    background-color: #85b7d9; /* Darken the button background color on hover */
+}
+
+button {
+    background-color: #a0d2eb; /* Set the button background color */
+    color: white; /* Set text color for buttons */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Smooth background color transition on hover */
+}
+
+a:hover {
+    color: #333; /* Darken the link color on hover */
+}
+
+
+a {
+    text-decoration: none;
+    color: #000; /* Set the link color to black */
+    font-weight: bold;
+    transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+
+header {
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    background-color:#a0d2eb; /* Choose a background color that complements your image */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* To position the logo and nav buttons at the ends */
+    align-items: center; /* To vertically center the content */
+    padding: 20px 0; /* Adjust the padding as needed */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: white;
+
+}
+
+.logo img {
+    width: 100px; /* Adjust the image size as needed */
+    height: 100px; /* Adjust the image size as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Add spacing between navigation buttons */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first button */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* Text color for navigation links */
+    font-weight: bold; /* Make the navigation links bold */
+    font-size: 18px; /* Adjust font size for navigation links */
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Set link color to black */
+    font-weight: bold;
+}
+
+
+
+.project-container {
+    background-color: rgba(160, 210, 235, 0.2);
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.project-container h3 {
+    text-align: center;
+
+}
+
+.project-image {
+    max-width: 100%; 
+    border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+}
+
+.project-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 968px) {
+    .project-container {
+        width: calc(33.33% - 20px); /* Three columns with spacing */
+        margin-right: 20px; /* Create spacing between projects */
+        float: left; /* Float elements to create a multi-column layout */
+        clear: none; /* Clear floating to avoid layout issues */
+    }
+
+    .project-container:nth-child(3n) {
+        margin-right: 0; /* Remove margin for every third project to create three columns */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #455;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-display: 2px;
+    text-align: left;
+    font-size: 12px;
+    
+}
+
+footer p {
+    margin: 0; 
+    margin-right: 10px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    }
+
+    
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between icons */
+}
+
+
+.social-icons a img {
+    width: 15px; /* Set the exact width */
+    height: 12px; /* Set the exact height */
+}
